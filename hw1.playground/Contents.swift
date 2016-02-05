@@ -41,7 +41,7 @@ class func arePalindromes(words: [String]) -> Bool {
 //: ### change) the code at the very bottom. Debug the function.
 
 
-//: "let" should not be in the for loop because it makes the value i a constant instead of variable. the bug is the missing return statement at the end of the function: when the word is actually a palindrome it should return true.
+//: "let" should not be in the for loop because it makes the value i a constant instead of variable. the bug is the missing return statement at the end of the function: when the word is actually a palindrome it should return true. It needs to be a class function so that we could have access to Words.
 
 
 //: ## Q3: More Functions and Object Initialization
@@ -89,7 +89,7 @@ class func arePalindromes(words: [String]) -> Bool {
 //: ### change) the code at the very bottom. Debug the function.
 
 
-//: [EXPLAIN YOUR ANSWER HERE]
+//: I added return true at the bottom of the function. The dictionary "countLetters" is declared but not initialised. It also cannot be a class function if it wants to use "self" in Line X. 
     
     
 }
